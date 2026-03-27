@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Peak Power Table</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --bg: #0d1117; --surface: #161b22; --border: #30363d; --accent: #00b4ff; --text: #e6edf3; --muted: #8b949e; --radius: 10px; }
+    body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.7; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 40px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 10; }
+    .nav-logo { font-weight: 700; font-size: 1.1rem; color: var(--text); letter-spacing: 0.03em; }
+    .nav-logo span { color: var(--accent); }
+    nav a.home { color: var(--muted); font-size: 0.9rem; }
+    nav a.home:hover { color: var(--text); text-decoration: none; }
+    .container { max-width: 720px; margin: 0 auto; padding: 60px 24px 80px; }
+    .page-title { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .last-updated { color: var(--muted); font-size: 0.875rem; margin-bottom: 48px; }
+    h2 { font-size: 1.15rem; font-weight: 700; margin-top: 40px; margin-bottom: 12px; color: var(--text); }
+    p { color: #c9d1d9; font-size: 0.95rem; margin-bottom: 14px; }
+    ul { list-style: none; padding: 0; margin-bottom: 14px; }
+    ul li { color: #c9d1d9; font-size: 0.95rem; padding: 6px 0 6px 20px; position: relative; }
+    ul li::before { content: "–"; position: absolute; left: 0; color: var(--accent); }
+    .highlight-box { background: rgba(0,180,255,0.07); border: 1px solid rgba(0,180,255,0.2); border-radius: var(--radius); padding: 20px 24px; margin: 24px 0; }
+    .highlight-box p { margin: 0; font-weight: 500; color: var(--text); }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo" style="text-decoration:none;">Peak<span>Power</span>Table</a>
+  <a href="index.html" class="home">← Back to home</a>
+</nav>
+<div class="container">
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="last-updated">Last updated: March 27, 2026</p>
+  <div class="highlight-box">
+    <p>🛡️ Peak Power Table does not collect, store, or transmit any personal data. All data processing happens entirely on your Garmin device.</p>
+  </div>
+  <h2>1. Overview</h2>
+  <p>Peak Power Table ("the app") is a Garmin Connect IQ data field developed by Matthew Guenter, an independent developer operating under the name Peak Power Table. This privacy policy describes how the app handles data on your device.</p>
+  <h2>2. Data Accessed</h2>
+  <p>In order to display real-time performance metrics during an activity, the app reads the following data directly from your Garmin device:</p>
+  <ul>
+    <li><strong>Current power output</strong> — sourced from a connected power meter via ANT+/BLE during an active session</li>
+    <li><strong>Current heart rate</strong> — sourced from a connected heart rate sensor or optical sensor during an active session</li>
+    <li><strong>User body weight</strong> — read from your Garmin user profile to calculate watts per kilogram (W/kg). If unavailable, a manually configured value from the app settings is used instead.</li>
+    <li><strong>User FTP setting</strong> — a manually entered value stored in the app's settings on your device</li>
+    <li><strong>Interval configuration</strong> — a user-defined list of interval durations stored in the app's settings on your device</li>
+  </ul>
+  <h2>3. How Data Is Used</h2>
+  <p>All data listed above is used solely to calculate and display peak power metrics on your Garmin device's screen during an activity. Specifically:</p>
+  <ul>
+    <li>Power data is used to compute rolling peak average watts for each configured interval</li>
+    <li>Heart rate data is used to display average HR during your best power window for each interval</li>
+    <li>Body weight is used to calculate and display W/kg values</li>
+    <li>FTP and interval settings are used to configure the display</li>
+  </ul>
+  <h2>4. Data Storage and Transmission</h2>
+  <p>The app does not store activity data beyond the current session. When your activity ends, all in-memory calculations are cleared. The app does not:</p>
+  <ul>
+    <li>Transmit any data to external servers or third parties</li>
+    <li>Store activity data in persistent files on your device</li>
+    <li>Connect to the internet or any remote service</li>
+    <li>Share any data with the developer or any other party</li>
+    <li>Access data from previous activities</li>
+  </ul>
+  <h2>5. Garmin Connect IQ Platform</h2>
+  <p>Peak Power Table is distributed through the Garmin Connect IQ Store and operates within the Garmin Connect IQ platform. Your use of the Garmin platform is subject to <a href="https://www.garmin.com/en-US/privacy/connect/policy/" target="_blank">Garmin's Privacy Policy</a>. This developer policy covers only the data handling within the app itself.</p>
+  <h2>6. Children's Privacy</h2>
+  <p>The app does not knowingly collect any data from any user, including minors. As no data is collected or transmitted, there are no special provisions required for children's privacy.</p>
+  <h2>7. Changes to This Policy</h2>
+  <p>If this privacy policy is updated in the future, the revised version will be posted at this URL with an updated "Last updated" date. Continued use of the app after any changes constitutes acceptance of the updated policy.</p>
+  <h2>8. Contact</h2>
+  <p>If you have any questions about this privacy policy, please contact:</p>
+  <p><strong>Matthew Guenter</strong><br>Peak Power Table<br><a href="mailto:matthew.guenter@peakpowertable.xyz">matthew.guenter@peakpowertable.xyz</a></p>
+</div>
+<footer>
+  <p>&copy; 2026 Peak Power Table &nbsp;·&nbsp; <a href="index.html">Home</a> &nbsp;·&nbsp; <a href="mailto:matthew.guenter@peakpowertable.xyz">Contact</a></p>
+</footer>
+</body>
+</html>
